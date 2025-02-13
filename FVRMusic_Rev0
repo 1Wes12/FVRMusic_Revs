@@ -1,0 +1,82 @@
+<!--rev 0 will just be the basic layout (nothing too special, but very important)-->
+
+<style>
+/*right I classified so I can align certain text to the right of the screen*/
+    .right {
+        text-align: right;
+        vertical-align: middle;
+}
+
+/*center I classified so I can align certain text to the center of the screen*/
+    .center {
+        text-align: center;
+        vertical-align: middle;
+}
+/*testing-dropdown is the row of dropdowns*/
+    .testing-dropdown {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
+/*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+    .footer{
+        margin-top: 20px;
+        text-align: center;
+}
+
+/*container I made to allow the drop down boxes to be centered and attached to the title text*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+</style>
+
+<!--using the container class to allow all the drop downs and text to be centered and attached-->
+<div class="container">
+<!--head is the title of the website-->
+<head>
+<b>
+    <h1 class="center"><p style="font-size: 80px;">Testing</p>
+    <p><img src = "" alt="TestingImg1" width="1920" height="300"></b></p></h1>
+</head>
+
+<!--using the testing-dropdown class so all drop downs have the code from that class applied the same way-->
+<div class="testing-dropdown">
+<!--drop down box 1-->
+    <div>
+        <label for="droptest1">Testing1:</label>
+        <select id="droptest1">
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+
+<!--drop down box 2-->
+    <div>
+        <label for="droptest2">Testing2:</label>
+        <select id="droptest2">
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+
+<!--drop down box 3-->
+    <div>
+        <label for="droptest3">Testing3:</label>
+        <select id="droptest3">
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+</div>
+</div>
+
+<!--this is my footer class (creates the bottom of the website page)-->
+<footer>
+    <p class="right">&copy; Testing</p>
+</footer>
