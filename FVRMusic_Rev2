@@ -1,0 +1,176 @@
+<!--rev 2 trying to develop the different page links and dropdown box functions aswell as other page revs-->
+
+<style>
+/*body is classified for the main page*/
+    body {
+        background-color: rgb(52, 51, 51);
+        color: white;
+        overflow-x: hidden;
+}
+
+/*right I classified so I can align certain text to the right of the screen*/
+    .right {
+        text-align: right;
+        vertical-align: middle;
+}
+
+/*center I classified so I can align certain text to the center of the screen*/
+    .center {
+        text-align: center;
+        vertical-align: middle;
+}
+/*testing-dropdown is the row of dropdowns*/
+    .dropdown {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
+/*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+    .footer{
+        margin-top: 20px;
+        text-align: center;
+}
+
+/*container I made to allow the drop down boxes to be centered and attached to the title text*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    .top1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 20px;
+        box-sizing: border-box;
+}
+
+.top2 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.top3 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 300px;
+    box-sizing: border-box;
+}
+
+.top4 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 493px;
+    box-sizing: border-box;
+}
+</style>
+
+<label for="Home">
+<p class="top1" style="font-size: 60px;"><b>Home</b></p>
+</label>
+
+<label for="About">
+<p class="top2" style="font-size: 30px;">About</p>
+</label>
+
+<label for="New Releases">
+<p class="top3" style="font-size: 30px;">New Releases</p>
+</label>
+
+<label for="Contact">
+<p class="top4" style="font-size: 30px;">Contact</p>
+</label>
+
+<!--using the container class to allow all the drop downs and text to be centered and attached-->
+<div class="container">
+<!--head is the title of the website-->
+<head>
+<b>
+    <h1 class="center"><p style="font-size: 80px;">Welcome To FVR Music!</p>
+</b>
+    <p class="center"><input type="text" placeholder="Search..." />
+    <button>Search</button></p>
+    <p><img src = "C:\Users\B1\Downloads\FVR Music.png" alt="FVR Music" width="1920" height="300"></p></h1>
+</head>
+
+<!--using the testing-dropdown class so all drop downs have the code from that class applied the same way-->
+<!--I want the drop down boxes to link to another browser/page involving the topic chosen-->
+<div class="dropdown">
+<!--drop down box 1-->
+    <div>
+        <label for="dropbox1">
+        <p class="center" style="font-size: 50px;"><b>Social Media</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\Social_Links_PhotoShop_1.png" alt="Social Media" width="200" height="200"></p>
+        </label>
+        <p class="center" style="font-size: 30px;"><select id="pageSelect" onchange="navigatePage()"></p>
+        <option>Select</option>
+        <option value="FVRMusicPlat.html">Music Platforms</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+
+<script>
+    function navigatePage() {
+        var select = document.getElementById("pageSelect");
+        var selectedValue = select.value;
+
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+
+
+
+<!--drop down box 2-->
+    <div>
+        <label for="dropbox2">
+        <p class="center" style="font-size: 50px;"><b>Music & Releases</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\music_releases_PhotoShop_1.png" alt="Music & Releases" width="200" height="200"></p>
+        </label>
+        <p class="center"><select id= <p class="center" style="font-size: 30px;">"droptest2"</p></p>>
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+
+<!--drop down box 3-->
+    <div>
+        <label for="dropbox3">
+        <p class="center" style="font-size: 50px;"><b>Blog/News</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\blog_new_PhotoShop_1.png" alt="Blog/News" width="200" height="200"></p>
+        </label>
+        <p class="center"><select id=<p class="center" style="font-size: 30px;">"droptest3"</p></p>>
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+</div>
+</div>
+
+<!--this is my footer class (creates the bottom of the website page)-->
+<footer>
+    <p class="right">&copy; Testing</p>
+</footer>
