@@ -1,0 +1,98 @@
+<style>
+    /*body is classified for the main page*/
+        body {
+            background-color: white;
+            color: rgb(52, 51, 51);
+            overflow-x: hidden;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .footer{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+    .sociallinks {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+    .email {
+        margin-left: 215px;
+}
+
+.insta {
+    margin-left: 215px;
+}
+
+.tiktok {
+    margin-left: 215px;
+}
+</style>
+
+<head>
+    <p style="font-size: 60px;"><a href = "FVRMusic.html" class="custom-link">Home</a></p>
+    <p class="center" style="font-size: 60px;">Engagement</p>
+</head>
+
+<div class="sociallinks">
+    <div>
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\email.jpg" alt="Email Link" width="200" height="200"><b>Email</b></p>
+        <p class="email" style="font-size: 30px"><a href="mailto:wesrussell928@gmail.com">FVR Email</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\instagram-40.png" alt="Instagram Link" width="200" height="200"><b>Instagram</b></p>
+        <p class="insta" style="font-size: 30px"><a href="https://www.instagram.com/11wes12/">FVR Instagram</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\tiktok.jpg" alt="TikTok Link" width="200" height="200"><b>TikTok</b></p>
+        <p class="tiktok" style="font-size: 30px"><a href="https://www.tiktok.com/@jadelyns_man">FVR TikTok</a></p>
+
+
+    </div>
+</div>
+
+<footer>
+    <p class = "center" style="font-size: 30px;"><a href = "FVRMusic.html" class="custom-link">Back</a></p>
+    <p class="right">&copy; FVRMusic</p>
+</footer>
