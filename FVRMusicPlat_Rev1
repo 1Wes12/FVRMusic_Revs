@@ -1,0 +1,121 @@
+<style>
+        /*body is classified for the main page*/
+            body {
+                background-color: white;
+                color: rgb(52, 51, 51);
+                overflow-x: hidden;
+        }
+        
+        /*right I classified so I can align certain text to the right of the screen*/
+            .right {
+                text-align: right;
+                vertical-align: middle;
+        }
+        
+        /*center I classified so I can align certain text to the center of the screen*/
+            .center {
+                text-align: center;
+                vertical-align: middle;
+        }
+        /*testing-dropdown is the row of dropdowns*/
+            .dropdown {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+        }
+        /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+            .footer{
+                margin-top: 20px;
+                text-align: center;
+        }
+        
+        /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+
+            .sociallinks {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+        }
+
+            .no-wrap {
+                white-space: nowrap;
+        }
+
+            .spotify {
+                margin-left: 215px;
+        }
+            .apple {
+                margin-left: 215px;
+        }
+
+        .custom-link {
+            text-decoration: none; /* Removes underline */
+            color: inherit; /* Uses the default text color */
+            font-weight: bold; /* Makes it stand out */
+            cursor: pointer; /* Keeps it clickable */
+        }
+
+          .centerno-wrap {
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+    }
+        .amazon {
+            margin-left: 215px;
+    }
+        .sound {
+            margin-left: 215px;
+    }
+
+    .pandora {
+        margin-left: 215px;
+}
+    .youtube {
+        margin-left: 215px;
+}
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+</style>
+
+
+<head>
+    <p style="font-size: 60px;"><a href = "FVRMusic.html" class="custom-link">Home</a></p>
+    <p class="center" style="font-size: 60px;">Music Links</p>
+</head>
+
+<div class="sociallinks">
+    <div>
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\Symbol-Spotify.png" alt="Spotify Link" width="200" height="200"><b>Spotify</b></p>
+        <p class="spotify" style="font-size: 30px"><a href="https://open.spotify.com/artist/5Aai0UCIOGVSEwET8mo2AE">FVR Spotify</a></p>
+        
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\Apple-Music-Logo-PNG-Photo.png" alt="Apple Link" width="200" height="200"><b>Apple Music</b></p>
+        <p class="apple" style="font-size: 30px"><a href="https://music.apple.com/us/artist/fvr/1760968269">FVR Apple Music</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\amazon.png" alt="Amazon Link" width="200" height="200"><b>Amazon Music</b></p>
+        <p class="amazon" style="font-size: 30px"><a href="https://music.amazon.com/artists/B07QY48426/fvr">FVR Amazon Music</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\Soundcloud-Logo-Png-Transparent-Background.png" alt="Soundcloud Link" width="200" height="200"><b>Soundcloud</b></p>
+        <p class="sound" style="font-size: 30px"><a href="https://soundcloud.com/russell-fever">FVR Soundcloud</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\pandora.png" alt="Pandora Link" width="200" height="200"><b>Pandora</b></p>
+        <p class="pandora" style="font-size: 30px"><a href="https://www.pandora.com/artist/fvr/ARPlp5mVjV6b4j6">FVR Pandora</a></p>
+
+        <p class="no-wrap" style="font-size: 60px"><img src = "C:\Users\B1\Downloads\youtube-music-icon-free-png.png" alt="Youtube Link" width="200" height="200"><b>Youtube Music</b></p>
+        <p class="youtube" style="font-size: 30px"><a href="https://www.youtube.com/channel/UCULgKJAd8qChu7GehrY9trQ">FVR Youtube Music</a></p>
+    </div>
+</div>
+
+<footer>
+    <p class = "center" style="font-size: 30px;"><a href = "FVRMusic.html" class="custom-link">Back</a></p>
+    <p class="right">&copy; FVRMusic</p>
+</footer>
